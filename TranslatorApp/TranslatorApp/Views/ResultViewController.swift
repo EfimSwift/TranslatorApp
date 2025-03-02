@@ -10,7 +10,6 @@ class ResultViewController: UIViewController {
     var titleLabel = UILabel()
     var selectedAnimalImage: UIImage?
     var selectedAnimalType: String?
-    
     let imageView = UIImageView()
     let speechBubble = SpeechBubbleView(text: "")
     let repeatButton = UIButton(type: .system)

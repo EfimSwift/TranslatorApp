@@ -9,7 +9,6 @@ import UIKit
 class SpeechBubbleView: UIView {
     private let label = UILabel()
     private let bubbleLayer = CAShapeLayer()
-    
     var text: String {
         get { label.text ?? "" }
         set { label.text = newValue }

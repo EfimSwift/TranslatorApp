@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     
     var isHumanToPet = true
     var isRecording = false
-    
     private var isHumanOnLeft = true
     
     private var humanLabelLeftConstraint: NSLayoutConstraint?
@@ -52,6 +51,7 @@ class ViewController: UIViewController {
             customTabBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             customTabBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 750)
         ])
+        
         //MARK: - cliclerButton addTarget
         customTabBar.clickerButton.addTarget(self, action: #selector(clickerTapped), for: .touchUpInside)
     }
@@ -236,7 +236,6 @@ class ViewController: UIViewController {
                 toggleRecordingUI()
                 isRecording = true
             }
-            
             if !isRecording {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     self.navigateToProcessingScreen()

@@ -11,7 +11,6 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
     
     var titleLabel = UILabel()
     private var collectionView: UICollectionView!
-    
     let sections = [
         ["Rate Us","Share App","Contact Us"],
         ["Restore Purchases","Privacy Policy","Terms of Use"]
